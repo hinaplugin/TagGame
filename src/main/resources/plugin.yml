@@ -1,0 +1,44 @@
+name: TagGame
+version: '1.0.0'
+main: com.hinaplugin.tagGame.TagGame
+api-version: '1.20'
+authors: [ hina2113, Flandle_Scarlet_ ]
+description: 鬼ごっこプラグイン
+
+commands:
+  taggame:
+    permission: taggame.commands
+
+permissions:
+  taggame.admin:
+    children:
+      - taggame.commands
+      - taggame.commands.join
+      - taggame.commands.join.other
+      - taggame.commands.join.all
+      - taggame.commands.leave
+      - taggame.commands.set
+      - taggame.commands.start
+      - taggame.commands.stop
+      - taggame.commands.list
+      - taggame.commands.reload
+    default: op
+  taggame.player:
+    children:
+      - taggame.commands
+      - taggame.commands.join
+      - taggame.commands.leave
+      - taggame.commands.start
+      - taggame.commands.stop
+    default: true
+
+  taggame.commands: {}
+  taggame.commands.join: {}
+  taggame.commands.join.other: {}
+  taggame.commands.join.all: {}
+  taggame.commands.leave: {}
+  taggame.commands.set: {}
+  taggame.commands.start: {}
+  taggame.commands.stop: {}
+  taggame.commands.list: {}
+  taggame.commands.reload: {}

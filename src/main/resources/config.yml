@@ -1,0 +1,29 @@
+# 鬼の人数
+hunter: 2
+
+# 制限時間(分)
+time: 10
+
+# 逃走者スタート地点
+escape-start:
+  x: 0
+  y: 0
+  z: 0
+  yaw: 0
+  pitch: 0
+
+# 鬼スタート地点
+hunter-start:
+  x: 0
+  y: 0
+  z: 0
+  yaw: 0
+  pitch: 0
+
+# 集合地点
+end-game:
+  x: 0
+  y: 0
+  z: 0
+  yaw: 0
+  pitch: 0
