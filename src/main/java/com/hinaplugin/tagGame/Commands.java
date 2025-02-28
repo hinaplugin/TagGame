@@ -508,6 +508,8 @@ public class Commands implements CommandExecutor, TabCompleter {
                             complete.add("escape");
                             complete.add("hunter");
                             complete.add("end");
+                            complete.add("size");
+                            complete.add("time");
                         }else {
                             if ("escape".startsWith(strings[1])){
                                 complete.add("escape");
@@ -517,6 +519,12 @@ public class Commands implements CommandExecutor, TabCompleter {
                             }
                             if ("end".startsWith(strings[1])){
                                 complete.add("end");
+                            }
+                            if ("size".startsWith(strings[1])){
+                                complete.add("size");
+                            }
+                            if ("time".startsWith(strings[1])){
+                                complete.add("time");
                             }
                         }
                     }
