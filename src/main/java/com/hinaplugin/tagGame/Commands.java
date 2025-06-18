@@ -187,6 +187,8 @@ public class Commands implements CommandExecutor, TabCompleter {
                             bossBar.setVisible(true);
                             TagGame.timer = new Timer(TagGame.config.getInt("time", 10) * 60, TagGame.bossBar);
 
+                            TagGame.teamList.getEntryList().removeIf(offline -> !offline.isOnline());
+
                             final Random random = new Random();
                             for (int i = 0; i < TagGame.config.getInt("hunter", 2); i++){
                                 final int index = random.nextInt(TagGame.teamList.getEntryList().size());
