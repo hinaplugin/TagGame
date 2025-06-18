@@ -15,6 +15,10 @@ public class PlayerDamageListener implements Listener {
             return;
         }
 
+        if (event.getCause() == EntityDamageEvent.DamageCause.WORLD_BORDER){
+            return;
+        }
+
         final Entity entity = event.getEntity();
 
         if (entity instanceof Player player){
